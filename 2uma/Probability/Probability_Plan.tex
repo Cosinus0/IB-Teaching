@@ -1,0 +1,209 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ucs}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{venndiagram}
+\graphicspath{{./figures/}}
+\begin{document}
+
+\title{Probability}
+\author{Nathan Hugh Barr}
+\maketitle
+	
+Weeks: $2$
+
+Dates: Monday $6/1$, Tuesday $7/1$, Monday $13/1$ (Cancelled because of Ess Work), Thursday $16/1$
+
+\section*{Monday 6/1}
+\textbf{1st half module}
+
+\begin{itemize}
+	\item What is probability?
+	\begin{itemize}
+		\item Represented numerically
+		\item Determine probabilities
+		\item Where is probability used?
+	\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+	\item Experimental Probability
+	\begin{itemize}
+		\item Trials, Outcomes, Frequency, Relative frequency.
+		\item Relative frequency $=$ Experimental probability(TOK 1)
+		\item Example : Dice and Two way table
+		\item Questions
+	\end{itemize}
+\end{itemize}
+
+\textbf{2nd half module}
+
+\begin{itemize}
+	\item Sample Space
+	\begin{itemize}
+		\item Sample space, Events
+		\item Set notation, subsets, Venn diagram
+		\item complementary events
+		\item Example: Venn diagram, 2D dimensional grid and Tree diagram
+	\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+	\item Theoretical Probability
+	\begin{itemize}
+		\item Equally likely definition
+		\item $P(A) = \frac{n(A)}{n(U)}$
+		\item Complementary Events  $P(A) + P(A') = 1$
+		\item Questions
+	\end{itemize}
+\end{itemize}
+
+\section*{Tuesday 7/1}
+\textbf{1st half module}
+\begin{itemize}
+	\item Addition law of probability
+	\begin{itemize}
+		\item Work through Investigation 4
+		\item Definition $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
+		\item Mutually exculsive
+		\item Examples:
+		\item Questions
+	\end{itemize}
+\end{itemize}
+
+\textbf{2nd half module}
+\begin{itemize}
+	\item Independent events
+	\begin{itemize}
+		\item Work through Investigation 5
+		\item Definition $P(A \cap B) = P(A) \times P(B)$
+		\item Examples:
+		\item Questions
+	\end{itemize}
+\end{itemize}
+
+\section*{Thursday 16/1}
+\textbf{1st half module}
+\begin{itemize}
+	\item Dependent events
+	\begin{itemize}
+		\item Example:
+		\item Definition $P(A \cap B) = P(A) \times P(B \mid A)$
+		\item Experiments and Replacement
+		\item Questions
+	\end{itemize}
+\end{itemize}
+
+\textbf{2nd half module}
+\begin{itemize}
+	\item Conditional probability
+	\begin{itemize}
+		\item Example:
+		\item Definition $P(A \mid B) = \frac{n(A \cap B)}{n(B)}$
+		\item Equally likely $\implies$ conditional probability $P(A \mid B) = \frac{P(A \cap B)}{P(B)}$
+		\item Questions
+	\end{itemize}
+\end{itemize}
+
+
+\section{Notes to Monday 6/1}
+
+\textbf{Probability:} 
+In the real world we think of probability as a \textbf{chance or likelihood} of some event happening. We assign a number between $0$ and $1$ to the chance of a event occurring and we call this number the probability. 
+
+\begin{figure}[H]
+	\includegraphics[width=\textwidth]{fig1}
+\end{figure}
+
+We can determine probabilities based on: \textbf{the results of an experiment} and/or \textbf{what we theoretically expect to happen}.
+
+The theory of probability is used in a wide range of fields:
+\begin{itemize}
+	\item Biology
+	\item Economics
+	\item Politics
+	\item Sport
+	\item Quality control
+	\item Production planning
+	\item Physics - Quantum mechanics and Statistical mechanics
+\end{itemize}
+
+\textbf{Experimental Probability}:
+When performing an experiment that involves chance the following information is needed.
+\textbf{Number of trials:} is the total number of times the experiment is performed.
+\textbf{Outcomes:} are the different results possible for one trial of the experiment.
+\textbf{Frequency of an outcome:} is the number of times the outcome is observed.
+\textbf{Relative frequency of an outcome:} is the frequency of the outcome expressed as a fraction or percentage of the total number of trials. $RF = \frac{Frequency}{Number of trials}$\\
+
+
+\textbf{Example: Dice probability experiment}
+\begin{itemize}
+	\item What is the theoretical probability of each face?
+	\item How many trials will you do?
+	\item What outcomes are possible? (Express in set notation)
+	\item Express the frequency of an outcome in your experiment.
+	\item Calculate the relative frequency of an outcome in your experiment.
+	\item (Look at individual experiments vs. the sum of the trials) 
+\end{itemize}
+
+In experiments, the relative frequency is the best estimate of the probability of that event occurring, \textbf{Relative frequency $=$ Experimental probability}.
+
+\textbf{Example: Two way table}
+
+\begin{tabular}{|c|c|c|c|}
+	\hline 
+	& Adult & Child & Total \\ 
+	\hline 
+	Season ticket holder & 1824 & 779 & 2603 \\ 
+	\hline 
+	Not a season ticket holder & 3247 & 1660 & 4907 \\ 
+	\hline 
+	Total & 5071 & 2439 & 7510 \\ 
+	\hline 
+\end{tabular}
+\begin{equation}
+b_i: P(\text{A child}) = \frac{779+1660}{7510} = 0.32 \implies 32\%
+\end{equation}
+
+\begin{equation}
+b_{ii}: P(\text{Not a season ticket holder}) = \frac{3247+1660}{7510} = 0.65 \implies 65\% 
+\end{equation}
+
+\begin{equation}
+b_{iii}: P(\text{An adult season ticket holder}) = \frac{1824}{7510} = 0.24 \implies 24\%
+\end{equation}
+
+\textbf{Questions:}
+\begin{itemize}
+	\item 10A - 1, 2, 3 (Page 243)
+	\item 10A - 5 (Page 244)
+	\item 10B - 3, 4 (Page 247)\\ 
+\end{itemize}
+
+\textbf{Sample space, events and complementary events}\\
+\begin{itemize}
+	\item The \textbf{sample space} $U$ is the set of all possible outcomes of an experiment. 
+	\item An \textbf{event} is a set of outcomes in the sample space that have a particular property.
+	\item The sample space is the \textbf{universal set} $U$.
+	\item The outcomes are the \textbf{elements} of the sample space.
+	\item Events are \textbf{subsets} of the sample space.
+	\item We use set notation and Venn diagrams to solve probability problems.
+\end{itemize}
+
+\textbf{Complementary events:} Two events are \textbf{complementary} if exactly one of the events must occur. If A is an event, then A' is the complementary event of A, or "not A".
+
+\textbf{Example: Venn diagram Q 10C.3}
+\begin{align}
+U &= \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16\}\\
+A &= \{4, 8, 12, 16 \}
+\end{align}
+\begin{venndiagram2sets}
+\end{venndiagram2sets}	
+\end{document}
