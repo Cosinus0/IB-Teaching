@@ -338,4 +338,65 @@ B &= \{1, 4, 9, 16\}
 	\item 10F - 5, 6 (Page 262)
 	\item 10F - 8, 9, 11 (Page 263)  
 \end{itemize}
+
+\section{Notes to Thursday 16/1}
+\textbf{Dependent events:}
+\begin{itemize}
+	\item Sampling example:
+	\begin{itemize}
+		\item 5 Red and 3 blue tickets in a box. One ticket is drawn, colour noted and not put back, and a second ticket is drawn.
+		\item Whats the chance that it is red?
+		\item First ticket is red, $P(\text{second is red})= \frac{4}{7}$
+		\item First ticket is blue, $P(\text{second is red})= \frac{5}{7}$
+		\item The probability of the second ticket being red depends on the what the first ticket was!
+	\end{itemize}
+	\item Definition:
+	\item Two or more events are \textbf{Dependent} if the occurrence of one of the events does affect the occurence of the other events. 
+	\item Events are \textbf{dependent} is they are \textbf{not independent}.
+	\item If A and B are dependent events then $P(A \cap B) = P(A) \times P(\text{B given that A has occurred}).$
+	\item Sampling:
+	\begin{itemize}
+		\item \textbf{Without Replacement} we have dependent events.
+		\item \textbf{Without Replacement} we have independent events.
+	\end{itemize} 
+\end{itemize}
+
+
+\textbf{Questions:}
+\begin{itemize}
+	\item 10G - 1,2 (Page 265)
+	\item 10G - 5,6 (Page 266)
+	\item 10G - 7, 10 (Page 267)
+	\item 10G - 15 (Page 268)
+\end{itemize}
+
+\textbf{Conditional probability:}
+\begin{itemize}
+	\item \textbf{Example:} The probability that a randomly chosen student who studies french, also studies italian? 
+	\item \begin{venndiagram2sets}[labelA={I},labelB={F},labelOnlyA={(14)}, labelOnlyB={(7)}, labelAB={(8)}, labelNotAB={(1)}]
+	\end{venndiagram2sets}
+	\item $P(\text{I given that F has occured})=\frac{8}{15}=\frac{\text{number students that studies Italian and French.}}{\text{number of students who study French.}}$
+\end{itemize}
+\textbf{Conditional probability definition:}For events A and B, we use the notation "A$\mid$B" to represent the event "A given that B has occured".
+\begin{equation}
+P(A \mid B)=\frac{n(A \cap B)}{n(B)}
+\end{equation}
+
+If the outcomes of the events are equally likely,
+
+\begin{equation}
+\frac{n(A \cap B)}{n(B)} = \frac{\frac{n(A \cap B)}{n(U)}}{\frac{n(B)}{n(U)}} = \frac{P(A \cap B)}{P(B)}
+\end{equation}
+
+\textbf{Conditional probability formula:}
+\begin{equation}
+P(A \mid B)=\frac{P(A \cap B)}{P(B)}
+\end{equation}
+
+\textbf{Questions:}
+\begin{itemize}
+	\item 10H - 1, 2, 4 (Page 269)
+	\item 10H - 7 (Page 270)
+	\item 10H - 9 (Page 271)
+\end{itemize}
 \end{document}
