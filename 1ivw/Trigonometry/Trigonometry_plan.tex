@@ -207,7 +207,7 @@ When solving questions the trigonometrical ratio rhyme can be used and triangles
 
 Angle of elevation - Above the horizontal line
 
-Angle of depression - Blow the horizontal line.
+Angle of depression - Below the horizontal line.
 
 These problems are a combination of pythagoras' theorem, trigonometrical equations and alternate angles.
 
@@ -278,4 +278,110 @@ d = \sqrt{500} = 22.36067978 \approx 22.4 km
 \theta = \arctan(0.5) = 26.56505118 \approx 26.6\degree\\
 \text{Bearing}=270\degree + 26.6\degree = 296.6\degree
 \end{align}
+
+\section{Notes Tuesday 14/1}
+
+\textbf{The sine rule:}
+Earlier we worked on right angle triangle, and looked at the trigonometrical formulae we can use to solve those problems. But what happens when the triangles are not right angle triangles? We can break them into two right angle triangles or we can use the Sine rule, and cosine rule.
+
+Consider the following triangle:
+
+\begin{figure}[H]
+	\includegraphics[width=\textwidth]{sinerule.png}
+\end{figure}
+
+The triangle ACX is right angled triangle, and the height $h$ can be calculated using the sine ratio formula:
+
+\begin{equation}
+h = b \times \sin(A)
+\end{equation}
+
+The triangle BXC is also a right angled triangle, height is calculated:
+
+\begin{equation}
+h = a \times \sin(B)
+\end{equation}
+
+Both of the equations are equal to the height of the triangle:
+
+\begin{align}
+a \times \sin(B) &= b \times \sin(A) \\
+\frac{a}{\sin(A)} &= \frac{b}{\sin(B)}
+\end{align}
+
+Drawing a perpendicular line from A to BC will obtain similar results using $c$ and $\sin(C)$.
+
+\textbf{The Sine Rule}
+
+\begin{equation}
+\frac{a}{\sin(A)} = \frac{b}{\sin(B)} = \frac{c}{\sin(C)}
+\end{equation}
+
+This rule is used is you have two angles, one length and want to find a missing length, or you have two lengths, one angle and want to find a missing angle.
+
+\textbf{Example:}
+
+Consider the triangle:
+
+\begin{figure}[H]
+	\includegraphics[width=\textwidth]{sineruleex.png}
+\end{figure}
+
+\begin{align}
+A &= 180-72-51 = 57\\
+\frac{x}{\sin(51)} = \frac{12.4}{\sin(57)}\\
+x = 11.49033994 \approx 11.5\\
+\frac{y}{\sin(72)} = \frac{12.4}{\sin(57)}\\
+y=14.06166051 \approx 14.1
+\end{align}
+
+\textbf{Questions:}
+\begin{itemize}
+	\item 28.1 - 2,4,6 (Page 511)
+	\item 28.1 - 8,10,12 (Page 512)
+\end{itemize}
+
+\textbf{The ambiguous case of the sine rule}
+You have to be careful when using the sine rule! An acute angle and obtuse angle can give the same result.
+
+Consider a triangle:
+
+\begin{figure}[H]
+	\includegraphics[width=\textwidth]{sinecase.png}
+\end{figure} 
+
+Using the sine rule, the acute and obtuse angle made the side rotated through the arc with radius $7$ cm.
+
+\begin{align}
+\frac{7}{\sin(50\degree)} &= \frac{8}{\sin(C)}\\
+\sin(C) &= 0.875479\\
+C &= \arcsin(\frac{8 \times \sin(50)}{7}) = 61.10176\degree\\
+\sin(180-61.10176) &= 0.875479372
+\end{align}
+
+\textbf{Questions:}
+\begin{itemize}
+	\item 2,4,6,8 Page(515.)
+\end{itemize}
+
+\textbf{The cosine rule}
+The cosine rule is a version of Pythagoras's theorem and is used when calculating either at missing length or angle. If you need to calculate an angle, you need three lengths. If you need to calculate a length, you need an angle and two lengths.
+
+\begin{align}
+c^2 = a^2 + b^2 - 2ab\cos(C)\\
+a^2 = b^2 + c^2 - 2ab\cos(A)\\
+b^2 = a^2 + c^2 - 2ab\cos(B)
+\end{align}
+
+\begin{equation}
+\cos(C) = \frac{a^2 + b^2 - c^2}{2ab}
+\end{equation}
+
+The other angles can be isolated from the other cosine rules.
+
+\textbf{Questions:}
+\begin{itemize}
+	\item 3, 6, 8, 10 (Page 518)
+	\item 2, 4, 8, 10 (Page 519)
+\end{itemize} 
 \end{document}
